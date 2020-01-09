@@ -6,6 +6,7 @@
 .sfdx/
 .localdevserver/
 .idea/
+IlluminatedCloud/
 
 # Logs
 logs
