@@ -1,0 +1,10 @@
+<messaging:emailTemplate subject="My sample VF email template" recipientType="Contact" relatedToType="ShoppingCart__c">
+<messaging:plainTextEmailBody >
+Congratulations!
+This is your new Visualforce Email Template.
+Cart Id: {!relatedTo.Id}
+Cart Email: {!relatedTo.Email__c}
+Cart First Name: {!relatedTo.FirstName__c}
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>
