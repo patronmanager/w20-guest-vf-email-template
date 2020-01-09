@@ -1,3 +1,15 @@
-<apex:page id="EmailExample">
-  Hello World
+<apex:page id="EmailExample" controller="EmailExampleController">
+  <apex:form >
+    <apex:pageMessages />
+    Hello World
+    <apex:commandButton action="{!createCart}" value="Create Cart"/>
+    <br/><br/>
+    Cart ID:         {!cart.Id}
+    <br/>
+    Cart First Name: {!cart.FirstName__c}
+    <br/>
+    Cart Email: {!cart.Email__c}
+    <br/><br/>
+    <apex:commandButton action="{!emailCart}" value="Send Confirmation Email"/>
+  </apex:form>
 </apex:page>

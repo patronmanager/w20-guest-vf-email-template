@@ -20,4 +20,8 @@ sfdx force:org:open
 Then visit the Sites page in Setup and navigate to your new Site
 ```
 https://<your Sites domain>/sample/EmailExample
-``` 
+```
+Click "Create Cart" and then "Send Confirmation Email"
+
+Expected: You should receive a confirmation email
+Actual:
