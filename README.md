@@ -1,5 +1,7 @@
 # Winter '20 VF Email Template
 
+## Edit the source code to set your email address in EmailExampleController
+
 ## Create a scratch org and assign Perm Set to Site Guest User
 ```
 sfdx force:org:create -f config/project-scratch-def.json --setdefaultusername
