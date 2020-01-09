@@ -24,4 +24,8 @@ https://<your Sites domain>/sample/EmailExample
 Click "Create Cart" and then "Send Confirmation Email"
 
 Expected: You should receive a confirmation email
-Actual:
+Actual: SendEmail failed. First exception on row 0; first error: INVALID_CROSS_REFERENCE_KEY, invalid cross reference id: []
+
+If you grant View All Data to the Shopping Cart Custom Object to the Sites Permission Set, the email sends successfully
+
+Setup -> Permission Sets -> Sites -> Object Settings -> Shopping Carts -> Edit -> check View All -> Save
