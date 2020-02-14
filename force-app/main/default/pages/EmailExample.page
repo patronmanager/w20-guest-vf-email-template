@@ -9,6 +9,10 @@
     Cart First Name: {!cart.FirstName__c}
     <br/>
     Cart Email: {!cart.Email__c}
+    <br/>
+    System Modstamp: {!cart.SystemModstamp}
+    <br/><br/>
+    <apex:commandButton action="{!retrieveCart}" value="Retrieve Cart"/>
     <br/><br/>
     <apex:commandButton action="{!emailCart}" value="Send Confirmation Email"/>
   </apex:form>

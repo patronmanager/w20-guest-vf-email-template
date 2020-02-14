@@ -11,6 +11,16 @@ public with sharing class EmailExampleController {
         return null;
     }
 
+    public PageReference retrieveCart(){
+        try {
+            cart = [SELECT Id, Email__c, Name, FirstName__c, SystemModstamp FROM ShoppingCart__c WHERE Id = :cart.Id];
+        }
+        catch(Exception e){
+            ApexPages.addMessages(e);
+        }
+        return null;
+    }
+
     public PageReference emailCart(){
         try {
             WithoutSharingUtil.sendConfirmationEmail(cart);
